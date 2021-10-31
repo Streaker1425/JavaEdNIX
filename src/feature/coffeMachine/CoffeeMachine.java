@@ -3,7 +3,6 @@ package feature.coffeMachine;
 import java.util.Scanner;
 
 class CoffeeMachineFunctionality extends CoffeeValues {
-
     private int water=400, milk=540, coffee=120, cups=9, money=540, posCups = 251, cupsAmount = 1;
 
     Scanner scan = new Scanner(System.in);
