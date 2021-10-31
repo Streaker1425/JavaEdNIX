@@ -182,13 +182,12 @@ class CoffeeMachineFunctionality{
         }
     }
     public void mainMenu(String arg){
-
             switch(arg){
                 case "buy": makeEntireCoffee(); break;
                 case "refill": insertIngridients(); break;
                 case "take": takeMoney(); break;
                 case "remaining": showIngridientsLeft(); break;
-                case "exit": return;
+
             }
     }
 }
@@ -201,7 +200,9 @@ public class CoffeeMachine {
         CoffeeMachineFunctionality CoffeeMachine = new CoffeeMachineFunctionality();
         while (true){
             System.out.println("What do you want to do? (buy, refill, take, remaining, exit)");
-            CoffeeMachine.mainMenu(sc.next());
+            String ans = sc.next();
+            if(ans.equalsIgnoreCase("exit")) return;
+            else CoffeeMachine.mainMenu(ans);
         }
     }
 }
