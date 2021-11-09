@@ -1,6 +1,6 @@
 package feature.coffeMachine;
 
-public class Values {
+public class CoffeeValues {
 
     public static final int WATER_CAPACITY = 50000;
     public static final int MILK_CAPACITY = 15000;
